@@ -4,6 +4,9 @@
 
 This is an entirely userland utility, and requires no special kernel modules.
 
+As of now (12/2023), this has been tested on the following hardware:
+- LTX9000UP-GY
+
 
 ## Using the CLI Tool
 
