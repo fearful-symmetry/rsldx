@@ -8,7 +8,7 @@ use cli::Cli;
 fn main() -> Result<()> {
     let cli = Cli::parse();
 
-    let mut dev = linedisplayrs::find_display()?;
+    let mut dev = poletermrs::find_display()?;
 
     match cli.command {
         cli::Commands::Info => {println!("{}", dev)},

@@ -48,11 +48,11 @@ pub enum Position {
     Bottom
 }
 
-impl From<Position> for linedisplayrs::ScrollPosition {
+impl From<Position> for poletermrs::ScrollPosition {
     fn from(val: Position) -> Self {
         match val {
-            Position::Bottom => linedisplayrs::ScrollPosition::Bottom,
-            Position::Top => linedisplayrs::ScrollPosition::Top
+            Position::Bottom => poletermrs::ScrollPosition::Bottom,
+            Position::Top => poletermrs::ScrollPosition::Top
         }
     }
 }
@@ -63,11 +63,11 @@ pub enum Direction {
     Right   
 }
 
-impl From<Direction> for linedisplayrs::ScrollDirection {
+impl From<Direction> for poletermrs::ScrollDirection {
     fn from(val: Direction) -> Self {
         match val {
-            Direction::Left => linedisplayrs::ScrollDirection::Left,
-            Direction::Right => linedisplayrs::ScrollDirection::Right
+            Direction::Left => poletermrs::ScrollDirection::Left,
+            Direction::Right => poletermrs::ScrollDirection::Right
         }
     }
 }
@@ -78,11 +78,11 @@ pub enum CursorMode {
     Off
 }
 
-impl From<CursorMode> for linedisplayrs::CursorMode {
+impl From<CursorMode> for poletermrs::CursorMode {
     fn from(val: CursorMode) -> Self {
         match val {
-            CursorMode::On => linedisplayrs::CursorMode::On,
-            CursorMode::Off => linedisplayrs::CursorMode::Off
+            CursorMode::On => poletermrs::CursorMode::On,
+            CursorMode::Off => poletermrs::CursorMode::Off
         }
     }
 }

@@ -124,15 +124,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "95505c38b4572b2d910cecb0281560f54b440a19336cbbcb27bf6ce6adc6f5a8"
 
 [[package]]
-name = "ldprint"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "clap",
- "linedisplayrs",
-]
-
-[[package]]
 name = "libc"
 version = "0.2.151"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -148,19 +139,6 @@ dependencies = [
  "libc",
  "pkg-config",
  "vcpkg",
-]
-
-[[package]]
-name = "linedisplayrs"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "clap",
- "log",
- "rusb",
- "snafu",
- "thiserror",
- "usb-ids",
 ]
 
 [[package]]
@@ -236,12 +214,34 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "26072860ba924cbfa98ea39c8c19b4dd6a4a25423dbdf219c1eca91aa0cf6964"
 
 [[package]]
+name = "poletermrs"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "clap",
+ "log",
+ "rusb",
+ "snafu",
+ "thiserror",
+ "usb-ids",
+]
+
+[[package]]
 name = "proc-macro2"
 version = "1.0.70"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "39278fbbf5fb4f646ce651690877f89d1c5811a3d4acb27700c1cb3cdb78fd3b"
 dependencies = [
  "unicode-ident",
+]
+
+[[package]]
+name = "ptprint"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "clap",
+ "poletermrs",
 ]
 
 [[package]]

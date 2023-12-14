@@ -1,22 +1,21 @@
 # rsldx
 
-`rsldx` is a library and CLI tool for writing to Logic Controls LDX/LTX-model pole displays.
+`rsldx` is a library (`poletermrs`) and CLI tool (`ptprint`) for writing to Logic Controls LDX/LTX-model pole displays.
 
-This is an entirely userland utility, and requires no special kernel modules
+This is an entirely userland utility, and requires no special kernel modules.
 
 
 ## Using the CLI Tool
 
-`ldprint` can be installed via `cargo install`.
+`ptprint` can be installed via `cargo install`.
 
-From there, `ldprint` will connect to the display and print any provided message:
+From there, `ptprint` will connect to the display and print any provided message:
 
 ```
 ldprint print "Hello world!"
 ```
 
-
-## Using `ldprint` without root
+## Using `ptprint` without root
 
 On linux, connecting to a raw USB device usually requires root; connecting without root requires a custom `udev` rule,
 usually placed under `/etc/udev/rules.d/`. While the precise format depends on your distro, it'll usually look something like this:

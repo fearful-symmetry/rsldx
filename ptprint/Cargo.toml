@@ -1,5 +1,5 @@
 [package]
-name = "ldprint"
+name = "ptprint"
 version = "0.1.0"
 edition = "2021"
 
@@ -8,4 +8,4 @@ edition = "2021"
 [dependencies]
 anyhow = "1.0.75"
 clap = { version = "4.4.11", features = ["derive"] }
-linedisplayrs = {path = "../linedisplayrs"}
+poletermrs = {path = "../poletermrs"}
